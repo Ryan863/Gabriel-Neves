@@ -503,15 +503,15 @@ export default function Landing() {
 
             <div
               ref={grid}
-              className="mt-12 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3"
+              className="mt-12 grid gap-4 sm:grid-cols-2 sm:gap-5"
             >
               {items.map((p) => (
                 <figure
                   key={p.title}
                   data-pf
                   className={`group relative overflow-hidden rounded-2xl bg-stone-800 ${
-                    p.tall ? "row-span-2 aspect-[3/4] sm:aspect-auto" : "aspect-[4/3]"
-                  } ${p.tall ? "min-h-[260px]" : ""}`}
+                    "aspect-[16/11]"
+                  }`}
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
@@ -537,6 +537,26 @@ export default function Landing() {
                   </figcaption>
                 </figure>
               ))}
+              <a
+                data-pf
+                href={SITE.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex aspect-[16/11] flex-col items-start justify-end gap-3 rounded-2xl border border-white/15 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#B49A6E]/60 sm:col-span-2 sm:aspect-auto sm:flex-row sm:items-center sm:justify-between"
+              >
+                <span>
+                  <span className="block font-serif text-2xl font-semibold text-[#F7F6F2] sm:text-3xl">
+                    Veja mais projetos no Instagram
+                  </span>
+                  <span className="mt-1 block text-sm text-stone-400">
+                    Interiores, fachadas e obras em {SITE.instagramHandle}
+                  </span>
+                </span>
+                <span className="inline-flex items-center gap-2 text-sm font-semibold text-[#D8C8A4]">
+                  <InstagramIcon className="h-5 w-5" /> Abrir perfil
+                  <ArrowUpRight className="h-4 w-4" />
+                </span>
+              </a>
             </div>
           </div>
         </section>

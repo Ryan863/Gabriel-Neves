@@ -207,55 +207,20 @@ export const PORTFOLIO_FILTERS: ("Todos" | PortfolioCategory)[] = [
 
 export const PORTFOLIO: PortfolioItem[] = [
   {
-    title: "Residência Fachada Ripada",
-    place: "Rio do Sul, SC",
+    title: "Residência contemporânea",
+    place: "Madeira ripada, concreto e iluminação indireta",
     category: "Residencial",
     src: "/images/hero-desktop.jpg",
-    position: "10% 40%",
-    scale: 1.9,
-    tall: true,
+    position: "50% 50%",
+    scale: 1,
   },
   {
-    title: "Sala Integrada",
-    place: "Ibirama, SC",
-    category: "Interiores",
-    src: "/images/hero-desktop.jpg",
-    position: "45% 55%",
-    scale: 2.2,
-  },
-  {
-    title: "Área de Lazer e Piscina",
-    place: "Alto Vale do Itajaí, SC",
+    title: "Área de lazer e piscina",
+    place: "Integração interior e exterior",
     category: "Residencial",
     src: "/images/hero-mobile.jpg",
-    position: "50% 90%",
-    scale: 1.2,
-    tall: true,
-  },
-  {
-    title: "Pavilhão Comercial",
-    place: "Rio do Sul, SC",
-    category: "Comercial",
-    src: "/images/hero-desktop.jpg",
-    position: "92% 45%",
-    scale: 2.0,
-  },
-  {
-    title: "Iluminação Cênica",
-    place: "Rio do Sul, SC",
-    category: "Interiores",
-    src: "/images/hero-mobile.jpg",
-    position: "40% 50%",
-    scale: 1.8,
-  },
-  {
-    title: "Volumetria Contemporânea",
-    place: "Ibirama, SC",
-    category: "Comercial",
-    src: "/images/hero-mobile.jpg",
-    position: "30% 25%",
-    scale: 1.4,
-    tall: true,
+    position: "50% 60%",
+    scale: 1,
   },
 ];
 
@@ -288,3 +253,4 @@ export const FOOTER = {
   cta: "Falar com o arquiteto no WhatsApp",
   credits: `© ${new Date().getFullYear()} Gabriel Neves • Arquitetura e Interiores. Todos os direitos reservados.`,
 };
+
