@@ -1,5 +1,5 @@
-﻿// =====================================================================
-// CONSTANTES DE CONTEÃšDO â€” edite aqui para manter a landing page
+// =====================================================================
+// CONSTANTES DE CONTEÚDO — edite aqui para manter a landing page
 // =====================================================================
 
 const WA_NUMBER = "554791498110";
@@ -15,7 +15,7 @@ export const SITE = {
   phoneHref: "tel:+554791498110",
   instagramHandle: "@gabrielnevesarquitetura",
   instagramUrl: "https://www.instagram.com/gabrielnevesarquitetura/",
-  coordinates: `27Â°12'56.9"S 49Â°38'36.4"W`,
+  coordinates: `27°12'56.9"S 49°38'36.4"W`,
   city: "Rio do Sul - SC",
   // Link oficial fornecido no briefing
   whatsapp:
@@ -28,18 +28,18 @@ export const SITE = {
 
 export const NAV_LINKS = [
   { href: "#sobre", label: "Sobre" },
-  { href: "#servicos", label: "ServiÃ§os" },
-  { href: "#entregaveis", label: "EntregÃ¡veis" },
-  { href: "#portfolio", label: "PortfÃ³lio" },
+  { href: "#servicos", label: "Serviços" },
+  { href: "#entregaveis", label: "Entregáveis" },
+  { href: "#portfolio", label: "Portfólio" },
   { href: "#processo", label: "Processo" },
   { href: "#contato", label: "Contato" },
 ];
 
 export const HERO = {
-  eyebrow: "ARQUITETURA & DESIGN DE INTERIORES â€¢ RIO DO SUL / IBIRAMA - SC",
+  eyebrow: "ARQUITETURA & DESIGN DE INTERIORES • RIO DO SUL / IBIRAMA - SC",
   title: "Ambientes pensados para a vida.",
   subtitle:
-    "Da concepÃ§Ã£o arquitetÃ´nica ao detalhamento milimÃ©trico de interiores. Projetos residenciais e comerciais que unem estÃ©tica autoral, bem-estar e precisÃ£o tÃ©cnica desde 2015.",
+    "Da concepção arquitetônica ao detalhamento milimétrico de interiores. Projetos residenciais e comerciais que unem estética autoral, bem-estar e precisão técnica desde 2015.",
   cta: "Solicitar Estudo de Viabilidade",
   authority: [
     "Formado pela UDESC desde 2015",
@@ -52,6 +52,7 @@ export type Service = {
   id: string;
   number: string;
   name: string;
+  tag: string;
   summary: string;
   listTitle: string;
   items: string[];
@@ -62,102 +63,113 @@ export const SERVICES: Service[] = [
   {
     id: "arquitetonico",
     number: "01",
-    name: "Projetos ArquitetÃ´nicos",
+    name: "Projetos Arquitetônicos",
+    tag: "Residenciais e Comerciais",
     summary:
-      "Residenciais e comerciais. CriaÃ§Ã£o da obra completa conforme as preferÃªncias e o orÃ§amento do cliente.",
+      "Criação da obra completa conforme as preferências, necessidades de rotina e o orçamento planejado pelo cliente.",
     listTitle: "Documentos entregues",
     items: [
       "Plantas Baixas",
       "Planta de Cobertura",
       "Cortes Longitudinal e Transversal",
       "Fachadas",
-      "Plantas de SituaÃ§Ã£o e LocalizaÃ§Ã£o",
-      "Volumetria 3D com imagens renderizadas fotorrealistas",
+      "Plantas de Situação e Localização",
+      "Volumetria 3D com Imagens Renderizadas fotorrealistas",
     ],
   },
   {
     id: "interiores",
     number: "02",
     name: "Projeto de Interiores Completo",
+    tag: "Detalhamento Executivo",
     summary:
-      "Foco em conforto, funcionalidade e harmonia de todos os elementos internos.",
+      "Foco absoluto em conforto, funcionalidade e harmonia estética de todos os elementos internos do ambiente.",
     listTitle: "O que abrange",
     items: [
       "Layout executivo",
       "Planta de Forro (Gesso)",
-      "Projeto LuminotÃ©cnico",
-      "PaginaÃ§Ã£o de Revestimentos e Pintura",
-      "MÃ³veis sob Medida: marcenaria, mÃ¡rmores e granitos",
-      "Cortes e Vistas com especificaÃ§Ãµes para instaladores",
-      "Memorial Descritivo de mÃ³veis soltos",
-      "Renders 3D",
+      "Projeto Luminotécnico",
+      "Paginação de Revestimentos e Pintura",
+      "Detalhamento de Móveis sob Medida (marcenaria, mármores e granitos)",
+      "Cortes e Vistas com especificações para instaladores",
+      "Memorial Descritivo de móveis soltos",
+      "Renders 3D fotorrealistas",
     ],
   },
   {
     id: "reformas",
     number: "03",
     name: "Reformas Residenciais e Comerciais",
+    tag: "Renovação & Ampliação",
     summary:
-      "ModificaÃ§Ã£o tÃ©cnica de edificaÃ§Ãµes existentes com acrÃ©scimo, manutenÃ§Ã£o ou adequaÃ§Ã£o de Ã¡rea.",
+      "Modificação técnica de edificações existentes com acréscimo, manutenção ou adequação inteligente de área.",
     listTitle: "Objetivos",
     items: [
-      "Renovar o espaÃ§o valorizando os potenciais existentes",
-      "Alterar modulaÃ§Ãµes e dimensionamento de cÃ´modos",
-      "Modernizar revestimentos e acabamentos alinhados Ã  nova rotina",
+      "Renovar o espaço valorizando potenciais existentes",
+      "Alterar modulações e dimensionamento de cômodos",
+      "Modernizar revestimentos e acabamentos alinhados à nova rotina",
     ],
   },
   {
     id: "consultoria",
     number: "04",
     name: "Consultoria de Interiores",
+    tag: "Ágil e Assertiva",
     summary:
-      "O olhar tÃ©cnico do arquiteto, Ã¡gil e assertivo, resolvido em duas etapas prÃ¡ticas.",
-    listTitle: "Como funciona",
+      "O olhar técnico do arquiteto resolvido em duas etapas práticas para transformar espaços com rapidez.",
+    listTitle: "Etapas práticas",
     ordered: true,
     items: [
-      "ApresentaÃ§Ã£o do ambiente e alinhamento de expectativas e orÃ§amento.",
-      "DossiÃª tÃ©cnico com especificaÃ§Ãµes, fotos e soluÃ§Ãµes prÃ¡ticas para transformar o espaÃ§o sem a complexidade de uma obra completa.",
+      "Apresentação do ambiente e alinhamento de expectativas e orçamento.",
+      "Dossiê e material técnico com especificações, fotos e soluções práticas para transformar o espaço sem a complexidade de uma obra completa.",
     ],
   },
 ];
 
 export const serviceLink = (name: string) =>
-  waLink(`OlÃ¡, gostaria de orÃ§ar um ${name}.`);
+  waLink(`Gostaria de orçar um ${name}`);
 
 export const ABOUT = {
-  eyebrow: "O Arquiteto",
+  eyebrow: "Fundador & Autoridade",
   title: "Gabriel Neves",
-  role: "Arquiteto e Urbanista â€¢ UDESC 2015",
+  role: "Arquiteto e Urbanista • UDESC (2015)",
+  quote:
+    "Arquitetura atemporal e interiores pensados para o bem-estar real — unindo técnica construtiva rigorosa, estética refinada e respeito ao investimento.",
   paragraphs: [
-    "Graduado em Arquitetura e Urbanismo pela Universidade do Estado de Santa Catarina (UDESC) em 2015, Gabriel iniciou a carreira em Ibirama/SC e, em 2022, transferiu a sede do escritÃ³rio para Rio do Sul/SC.",
-    "SÃ£o mais de 10 anos desenvolvendo projetos de alto padrÃ£o, residenciais e comerciais, sempre com foco em arquitetura atemporal e em ambientes pensados para o bem-estar real de quem vive neles.",
-    "Cada projeto nasce executÃ¡vel: tÃ©cnica construtiva rigorosa, controle de custos e acompanhamento minucioso, para que o investimento do cliente seja valorizado do papel Ã  obra.",
+    "Graduado em Arquitetura e Urbanismo pela Universidade do Estado de Santa Catarina (UDESC) em 2015, Gabriel Neves soma mais de 10 anos desenvolvendo projetos residenciais e comerciais de alto padrão.",
+    "O escritório nasceu inicialmente em Ibirama/SC e, desde 2022, está sediado em Rio do Sul/SC, atendendo todo o Alto Vale do Itajaí e projetos remotos em diversas regiões do Brasil.",
+    "Cada projeto é concebido para ser fielmente executável: compatibilização técnica rigorosa, especificações precisas, controle de custos e acompanhamento próximo para valorizar o patrimônio do cliente.",
   ],
   stats: [
-    { value: "2015", label: "FormaÃ§Ã£o UDESC" },
-    { value: "10+", label: "Anos de atuaÃ§Ã£o" },
+    { value: "2015", label: "Graduação UDESC" },
+    { value: "10+ anos", label: "Experiência autoral" },
     { value: "2022", label: "Sede em Rio do Sul" },
   ],
 };
 
 export const DELIVERABLES = {
-  eyebrow: "Diferencial de execuÃ§Ã£o",
+  eyebrow: "Diferencial de execução",
   title: "O que torna nossos projetos seguros.",
+  subtitle:
+    "Da primeira volumetria ao caderno executivo de obra, cada decisão é validada com clareza visual e precisão técnica.",
   blocks: [
     {
       icon: "box",
-      title: "Volumetria 3D & ImersÃ£o",
-      text: "O cliente visualiza cada detalhe, textura e iluminaÃ§Ã£o antes de assentar o primeiro tijolo.",
+      number: "01",
+      title: "Volumetria 3D & Imersão",
+      text: "O cliente visualiza cada detalhe, textura e iluminação antes de assentar o primeiro tijolo.",
     },
     {
       icon: "layers",
-      title: "CompatibilizaÃ§Ã£o TÃ©cnica Completa",
-      text: "Pranchas executivas claras que evitam retrabalho, desperdÃ­cio de material e surpresas na obra.",
+      number: "02",
+      title: "Compatibilização Técnica Completa",
+      text: "Pranchas executivas claras que evitam retrabalho, desperdício de material e surpresas na obra.",
     },
     {
       icon: "wallet",
-      title: "Respeito Rigoroso ao OrÃ§amento",
-      text: "Escolha de materiais compatÃ­vel com o teto de investimento planejado pelo cliente.",
+      number: "03",
+      title: "Respeito Rigoroso ao Orçamento",
+      text: "Escolha de materiais compatível com o teto de investimento planejado pelo cliente.",
     },
   ],
 };
@@ -165,92 +177,172 @@ export const DELIVERABLES = {
 export const PROCESS = [
   {
     step: "01",
-    title: "Conversa inicial",
-    text: "Entendemos seu terreno, rotina, desejos e orÃ§amento em uma primeira reuniÃ£o.",
+    title: "Diagnóstico & Alinhamento",
+    text: "Compreendemos sua rotina, terreno ou imóvel, referências estéticas e expectativa real de investimento.",
   },
   {
     step: "02",
-    title: "Estudo & conceito",
-    text: "Estudo de viabilidade e partido arquitetÃ´nico, com volumetria 3D para validaÃ§Ã£o.",
+    title: "Estudo Preliminar & 3D",
+    text: "Desenvolvemos o partido arquitetônico, plantas humanizadas e renders fotorrealistas para validação.",
   },
   {
     step: "03",
-    title: "Projeto executivo",
-    text: "Pranchas tÃ©cnicas detalhadas e compatibilizadas, prontas para a obra.",
+    title: "Projeto Executivo",
+    text: "Detalhamento milimétrico de marcenaria, iluminação, paginações e pranchas técnicas para a obra.",
   },
   {
     step: "04",
-    title: "Acompanhamento",
-    text: "Suporte durante a execuÃ§Ã£o para manter fidelidade ao projeto e ao orÃ§amento.",
+    title: "Suporte Técnico",
+    text: "Orientação aos fornecedores e acompanhamento para garantir fidelidade estética e orçamentária.",
   },
 ];
 
 export type PortfolioCategory = "Residencial" | "Comercial" | "Interiores";
 
 export type PortfolioItem = {
+  id: string;
   title: string;
-  place: string;
+  subtitle: string;
+  location: string;
+  area: string;
+  year: string;
   category: PortfolioCategory;
   src: string;
-  // recorte da imagem (object-position) e zoom para variar os enquadramentos
-  position: string;
-  scale: number;
-  tall?: boolean;
+  featured?: boolean;
 };
 
 export const PORTFOLIO_FILTERS: ("Todos" | PortfolioCategory)[] = [
   "Todos",
   "Residencial",
-  "Comercial",
   "Interiores",
+  "Comercial",
 ];
 
 export const PORTFOLIO: PortfolioItem[] = [
   {
-    title: "ResidÃªncia contemporÃ¢nea",
-    place: "Madeira ripada, concreto e iluminaÃ§Ã£o indireta",
+    id: "residencia-horizonte",
+    title: "Residência Horizonte",
+    subtitle: "Concreto aparente, brises em madeira ripada e integração plena com a área de lazer",
+    location: "Rio do Sul • SC",
+    area: "420 m²",
+    year: "2025",
     category: "Residencial",
     src: "/images/hero-desktop.jpg",
-    position: "50% 50%",
-    scale: 1,
+    featured: true,
   },
   {
-    title: "Ãrea de lazer e piscina",
-    place: "IntegraÃ§Ã£o interior e exterior",
+    id: "cozinha-freijo",
+    title: "Cozinha Gourmet em Freijó & Quartzito",
+    subtitle: "Marcenaria sob medida, iluminação linear quente e bancada monolítica em pedra natural",
+    location: "Rio do Sul • SC",
+    area: "38 m²",
+    year: "2025",
+    category: "Interiores",
+    src: "/images/portfolio-cozinha.jpg",
+  },
+  {
+    id: "living-mineral",
+    title: "Living Estante Mineral",
+    subtitle: "Estante piso-teto em laca fosca profunda, texturas naturais e iluminação cênica",
+    location: "Ibirama • SC",
+    area: "54 m²",
+    year: "2024",
+    category: "Interiores",
+    src: "/images/portfolio-living.jpg",
+  },
+  {
+    id: "residencia-pedra-luz",
+    title: "Residência Pedra & Luz",
+    subtitle: "Fachada imponente em pedra natural, balanços estruturais e brises de madeira",
+    location: "Alto Vale • SC",
+    area: "365 m²",
+    year: "2024",
     category: "Residencial",
-    src: "/images/hero-mobile.jpg",
-    position: "50% 60%",
-    scale: 1,
+    src: "/images/portfolio-fachada-pedra.jpg",
+    featured: true,
+  },
+  {
+    id: "suite-refugio",
+    title: "Suíte Master Refúgio Terroso",
+    subtitle: "Painel ripado, cabeceira em linho cru e penteadeira suspensa com luz indireta",
+    location: "Rio do Sul • SC",
+    area: "32 m²",
+    year: "2025",
+    category: "Interiores",
+    src: "/images/portfolio-suite.jpg",
+  },
+  {
+    id: "clinica-atelier",
+    title: "Espaço Comercial & Clínica Boutique",
+    subtitle: "Recepção escultural em madeira curvada, microcimento mineral e acústica refinada",
+    location: "Rio do Sul • SC",
+    area: "185 m²",
+    year: "2024",
+    category: "Comercial",
+    src: "/images/portfolio-comercial.jpg",
+  },
+  {
+    id: "sala-de-banho-travertino",
+    title: "Sala de Banho Travertino",
+    subtitle: "Banheira de imersão esculpida, iluminação zenital e metais em latão escovado",
+    location: "Ibirama • SC",
+    area: "19 m²",
+    year: "2025",
+    category: "Interiores",
+    src: "/images/portfolio-banho.jpg",
+  },
+];
+
+export const TESTIMONIALS = [
+  {
+    quote:
+      "O projeto 3D e o detalhamento executivo nos deram segurança total. A obra seguiu exatamente o que foi planejado, sem retrabalho e dentro do orçamento.",
+    author: "Casal M. & R.",
+    context: "Projeto Arquitetônico e Interiores • Rio do Sul/SC",
+  },
+  {
+    quote:
+      "Cada centímetro da marcenaria e da iluminação foi pensado para a nossa rotina. O escritório transformou nosso espaço em um ambiente acolhedor e atemporal.",
+    author: "Família K.",
+    context: "Interiores Completo • Ibirama/SC",
   },
 ];
 
 export const FAQ = [
   {
-    q: "Como funciona a primeira reuniÃ£o para entender meu projeto?",
-    a: "Ã‰ uma conversa objetiva, presencial ou por vÃ­deo, em que entendemos sua rotina, o terreno ou ambiente, o estilo desejado e o investimento previsto. A partir disso, apresentamos o escopo ideal e a proposta de trabalho.",
+    q: "Como funciona a primeira reunião para entender meu projeto?",
+    a: "É uma conversa inicial estratégica, presencial no escritório em Rio do Sul ou por videochamada. Analisamos suas referências, rotina da família ou empresa, características do terreno/imóvel e expectativa de investimento para apresentar uma proposta detalhada.",
   },
   {
-    q: "Eu jÃ¡ tenho um terreno, em que momento devo contratar o arquiteto?",
-    a: "O quanto antes. Com o arquiteto desde a escolha ou anÃ¡lise do terreno, avaliamos topografia, insolaÃ§Ã£o, legislaÃ§Ã£o e viabilidade, evitando surpresas e custos desnecessÃ¡rios na obra.",
+    q: "Eu já tenho um terreno, em que momento devo contratar o arquiteto?",
+    a: "O ideal é envolver o arquiteto antes mesmo de fechar a compra ou logo após adquirir o lote. Avaliamos insolação, topografia, ventilação e recuos legais para aproveitar todo o potencial construtivo e evitar custos extras com movimentação de terra.",
   },
   {
-    q: "VocÃªs atendem apenas Rio do Sul e Ibirama ou desenvolvem projetos remotos?",
-    a: "Atendemos presencialmente Rio do Sul, Ibirama e todo o Alto Vale do ItajaÃ­. TambÃ©m desenvolvemos projetos de forma 100% remota para todo o Brasil, com reuniÃµes por vÃ­deo e entrega digital das pranchas.",
+    q: "Vocês atendem apenas Rio do Sul e Ibirama ou desenvolvem projetos remotos?",
+    a: "Atendemos presencialmente Rio do Sul, Ibirama e toda a região do Alto Vale do Itajaí. Também desenvolvemos projetos completos à distância para todo o Brasil, com reuniões online, imersão em 3D e entrega de cadernos executivos rigorosos para a equipe local.",
   },
   {
-    q: "Qual Ã© a diferenÃ§a de escopo e investimento entre Consultoria e Projeto de Interiores Completo?",
-    a: "A Consultoria Ã© Ã¡gil: alinhamos expectativas e entregamos um dossiÃª com especificaÃ§Ãµes e soluÃ§Ãµes prÃ¡ticas, sem obra completa, com investimento menor. O Projeto de Interiores Completo inclui layout executivo, forro, luminotÃ©cnico, marcenaria detalhada, revestimentos e renders 3D, com maior escopo e investimento.",
+    q: "Qual é a diferença de escopo e investimento entre Consultoria e Projeto de Interiores Completo?",
+    a: "A Consultoria é enxuta e rápida: em duas etapas entregamos um dossiê com layout, cores, mobiliário solto e soluções pontuais sem quebra-quebra. Já o Projeto de Interiores Completo contempla gesso, luminotécnico, paginação de pedras e pisos, detalhamento de marcenaria sob medida e renders 3D fotorrealistas.",
   },
 ];
 
 export const LOCATION = {
-  title: "PresenÃ§a regional",
-  regions: ["Rio do Sul", "Ibirama", "Alto Vale do ItajaÃ­", "Remoto: todo o Brasil"],
+  title: "Rio do Sul, Ibirama & Alto Vale",
+  subtitle:
+    "Escritório sediado em Rio do Sul/SC, com atuação presencial em todo o Alto Vale do Itajaí e atendimento remoto em todo o Brasil.",
+  regions: [
+    "Rio do Sul • SC (Sede)",
+    "Ibirama • SC",
+    "Alto Vale do Itajaí",
+    "Projetos Remotos • Brasil",
+  ],
 };
 
 export const FOOTER = {
-  title: "Vamos dar vida ao seu prÃ³ximo espaÃ§o?",
-  cta: "Falar com o arquiteto no WhatsApp",
-  credits: `Â© ${new Date().getFullYear()} Gabriel Neves â€¢ Arquitetura e Interiores. Todos os direitos reservados.`,
+  title: "Vamos dar vida ao seu próximo espaço?",
+  subtitle:
+    "Agende uma conversa diretamente pelo WhatsApp para avaliarmos a viabilidade do seu projeto residencial, comercial ou de interiores.",
+  cta: "Iniciar conversa no WhatsApp",
+  credits: `© ${new Date().getFullYear()} Gabriel Neves • Arquitetura e Interiores. Todos os direitos reservados.`,
 };
-
