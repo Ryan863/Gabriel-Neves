@@ -21,6 +21,8 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 body {
@@ -28,6 +30,10 @@ body {
   color: #44403c;
   font-family: var(--font-jakarta), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  max-width: 100vw;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
 h1,
